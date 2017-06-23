@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Publisher detail information{% endblock %}
+
+{% block content %}
+    <table>
+        <tr>
+            <td>出版社</td>
+            <td>{{ publisher.name }}</td>
+        </tr>
+        <tr>
+            <td>省份</td>
+            <td>{{ publisher.state_province }}</td>
+        </tr>
+    </table>
+    <br>
+    {% for book in book_list %}
+        <li>{{ book.title }}</li>
+    {% endfor %}
+{% endblock %}
