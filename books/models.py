@@ -11,7 +11,6 @@ class Publisher(models.Model):
     country = models.CharField(max_length=50, blank=True)
     website = models.URLField(blank=True)
 
-
     class Meta:
         ordering = ['name']
 
