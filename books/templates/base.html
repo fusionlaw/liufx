@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %}{% endblock %}</title>
+    <title>{% block title %}index{% endblock %}</title>
 </head>
 <body>
 <div id="container">
@@ -15,7 +15,9 @@
     </div>
     <!--end of breadcrumbs-->
     <div id="content">
-        {% block content %}{% endblock %}
+        {% block content %}
+            <h1>首页测试</h1>
+        {% endblock %}
     </div>
     <!--end of content-->
     <div id="foot">
