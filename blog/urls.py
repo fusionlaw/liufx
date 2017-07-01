@@ -1,5 +1,5 @@
 from django.conf.urls import url
-from .views import PostList, PostDetail
+from .views import PostList, PostDetail, post_share
 
 app_name = 'blog'
 urlpatterns = [
@@ -10,4 +10,5 @@ urlpatterns = [
         PostDetail.as_view(),
         name='post_detail'
     ),
+    url(r'^(?P<post_id>\d+)/share/$', post_share, name='post_share'),
 ]
