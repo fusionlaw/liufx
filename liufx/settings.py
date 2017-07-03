@@ -123,13 +123,13 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-EMAIL_HOST = 'smtp.126.com'
+EMAIL_HOST = 'smtp.qq.com'
 
-EMAIL_HOST_USER = 'liufuxiang1986@126.com'
+EMAIL_HOST_USER = '376766388@qq.com'
 
-EMAIL_HOST_PASSWORD = 'fusionLaw520618'
+EMAIL_HOST_PASSWORD = 'liuFX86jiangBB83'
 
-EMAIL_PORT = 587
+EMAIL_PORT = 465
 
 EMAIL_USE_TLS = True
 
