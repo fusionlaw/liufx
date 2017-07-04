@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'taggit.apps.TaggitAppConfig',
     'blog.apps.BlogConfig',
     'books.apps.BooksConfig',
     'polls.apps.PollsConfig',
