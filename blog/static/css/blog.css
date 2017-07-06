@@ -2,9 +2,11 @@ body{
     color: #555;
 }
 a{
-    color: #dd4511;
+    color: #32a2d5;
 }
-
+li{
+    margin: 5px;
+}
 #content{
     float: left;
     width: 65%;
@@ -15,5 +17,5 @@ a{
     float: right;
     width: 30%;
     padding: 10px;
-    background-color: #33cce0;
+    background-color: #ccc;
 }
