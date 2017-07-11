@@ -21,4 +21,5 @@ urlpatterns = [
     url(r'^polls/', include('polls.urls')),
     # url(r'^books/', include('books.urls')),
     url(r'', include('books.urls')),
+    url(r'^account/', include('account.urls')),
 ]
