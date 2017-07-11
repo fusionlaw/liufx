@@ -1,5 +1,6 @@
-from django.conf.urls import url
-from .views import post_list, post_share, post_detail
+from django.conf.urls import url, include
+from .views import post_list, post_detail # post_search
+
 
 app_name = 'blog'
 urlpatterns = [
@@ -11,6 +12,7 @@ urlpatterns = [
         post_detail,
         name='post_detail'
     ),
-    url(r'^(?P<post_id>\d+)/share/$', post_share, name='post_share'),
+    # url(r'^(?P<post_id>\d+)/share/$', post_share, name='post_share'),
+    url(r'^search/', include('haystack.urls')),
 ]
 
