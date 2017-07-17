@@ -13,6 +13,12 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 import os
 from django.core.urlresolvers import reverse_lazy
 
+EMAIL_HOST = 'smtp.qq.com'
+EMAIL_HOST_USER = '376766388@qq.com'
+EMAIL_HOST_PASSWORD = 'pvpnnpkmktsabjei'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
 LOGIN_REDIRECT_URL = reverse_lazy('dashboard')
 LOGIN_URL = reverse_lazy('login')
 LOGOUT_URL = reverse_lazy('logout')
